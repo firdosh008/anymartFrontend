@@ -91,8 +91,6 @@ function Signin() {
          <p>Enter the infromation you entered while registering</p>
           <h3>Sign in with</h3>
           <button className='btn'><FcGoogle className='icon g'/></button>
-          <button className='btn'><BsFacebook className='icon f'/></button>
-          <button className='btn'><AiFillTwitterCircle className='icon t'/></button>
           <p className='self'>Or continue with</p>
           <Row>
           <Col lg={6} md={12} sm={12}> <h3>Email Address</h3>

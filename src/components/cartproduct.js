@@ -8,6 +8,8 @@ function Cartproduct(props) {
   const dis = props.price.mrp - props.price.cost;
   const iddata = props.iddata;
 
+  console.log(iddata);
+
   const addtocart = async (id) => {
     const res = await fetch("/addtocart/" + id, {
       method: "POST",

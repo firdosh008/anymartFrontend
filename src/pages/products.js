@@ -36,7 +36,7 @@ function Products() {
   //console.log(iddata);
 
   const getiddata = async () => {
-    const res = await fetch("/getproductone/" + id, {
+    const res = await fetch("/getproduct/" + id, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -165,7 +165,8 @@ function Products() {
                     <h2>{iddata.title}</h2>
                     <div className="prices">
                       <h4 className="cost">
-                        {"₹" + iddata.price.cost + ".00"}
+                        
+                        {iddata.price.cost?"₹" + iddata.price.cost + ".00":"₹" + iddata.price.mrp + ".00"}
                       </h4>
                       <h4 className="mrp">{"₹" + iddata.price.mrp + ".00"}</h4>
                       <h4 className="discount">{iddata.price.discount}</h4>

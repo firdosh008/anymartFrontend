@@ -41,7 +41,7 @@
 
     .Navbar .search .icon {
         position: relative;
-        left: 7rem!important;
+        left: 5rem!important;
     }
     .nav-bar-profile .unloged{
         font-size:30px!important;
@@ -71,7 +71,6 @@
     }
 
     .signin-col1 .btn{
-        width:20%!important;
         border-radius:10px!important;
         padding:0px 10px!important;
         margin:0px 5px 5px 0px!important;
@@ -98,7 +97,7 @@
 
     .signin-col1 .self:after{
         width: 50px!important;
-        right:140px!important;
+        right:100px!important;
       }
 
       .signin-col1 .input{
@@ -112,7 +111,7 @@
         
       }
 
-      .signin-col1 .sig-btn{
+      .signin-col1 .sig-btn, .sig-btn{
         width:90%!important;
         border-radius:10px;
       }
@@ -380,7 +379,7 @@
 .signin-col1 .btn{
     border:1px solid white;
     background-color:white;
-    width:30%;
+    width:100%;
     border-radius:10px;
     padding:5px 20px;
     margin:0px 15px 15px 0px;
@@ -447,7 +446,7 @@ width:100%;
     margin-top:15px;
   }
 
-  .signin-col1 .sig-btn{
+  .signin-col1 .sig-btn,{
     background-color:#bb0a1e;
     width:100%;
     color:white;
@@ -456,8 +455,36 @@ width:100%;
     margin:0px 15px 15px 0px;
     font-size:20px;
     border:1px solid black;
+    transition: 0.7s;
   }
- 
+  .signin-col1 .sig-btn:hover{
+    transform: scale(0.8);
+  }
+
+  .empty-cart{
+    width:70%;
+    margin:auto;
+    padding:20px;
+  }
+
+  .empty-cart img{
+    width:70%;
+    margin:auto 
+  }
+
+  .empty-cart .sig-btn{
+    background-color:#bb0a1e;
+    width:25%;
+    color:white;
+    border-radius:10px;
+    padding:5px 20px;
+    font-size:20px;
+    border:1px solid black;
+    transition: 0.7s;
+  }
+  .empty-cart .sig-btn:hover{
+    transform: scale(0.8);
+  }
   .signin{
     margin:auto;
     text-align:left;

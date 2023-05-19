@@ -4,8 +4,16 @@ import Cartproduct from "../components/cartproduct";
 import { BarWave } from "react-cssfx-loading";
 import Footer from "../containers/footer";
 import NavScroll from "../containers/navbar";
+import { useNavigate } from "react-router-dom";
+import empty from "../assets/empty-card.avif";
 
 function Cart() {
+  const navigate = useNavigate();
+  const senddata = ()=>{
+     navigate("/");
+  }
+
+
   const [cartdata, setcartdata] = React.useState({});
   //console.log(cartdata);
 
@@ -114,14 +122,13 @@ function Cart() {
           <Footer />
         </>
       ) : (
-        <BarWave
-          className="loader"
-          color="black"
-          width="50px"
-          height="50px"
-          duration="3s"
-        />
-      )}
+        <div className="empty-cart">  
+        <img src={empty} />
+        <button className='sig-btn' onClick={senddata}>Add to cart</button>
+        </div>
+      )
+      
+      }
     </>
   );
 }

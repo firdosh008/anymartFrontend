@@ -82,8 +82,6 @@ function Signup() {
          <p>Enter the infromation Correctly</p>
           <h3>Sign up with</h3>
           <button className='btn'><FcGoogle className='icon g'/></button>
-          <button className='btn'><BsFacebook className='icon f'/></button>
-          <button className='btn'><AiFillTwitterCircle className='icon t'/></button>
           <p className='self'>Or continue with</p>
           <h3>Name</h3>
           <input className='input' name="name" type="text"  onChange={adduser} value={userdata.name} />
