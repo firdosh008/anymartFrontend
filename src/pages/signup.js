@@ -1,8 +1,6 @@
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import {FcGoogle} from 'react-icons/fc';
-import { AiFillTwitterCircle } from 'react-icons/ai';
-import { BsFacebook } from 'react-icons/bs';
 import bg from '../assets/signup-bc.jpg';
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
